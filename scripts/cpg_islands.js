@@ -43,7 +43,7 @@ function cpgIslandRegions (dnaSequence, windowSize, cutOff)	{
 	cutOff = parseFloat(cutOff);
 
 	if (windowSize > dnaSequence.length)	{
-		outputWindow.document.write ("The input sequence must be longer than " + windowSize  + " bases.<br />\n");
+		outputWindow.document.write ("The input sequence must be longer than " + windowSize  + " bases.<br>\n");
 		return true;
 	}
 
@@ -74,7 +74,7 @@ function cpgIslandRegions (dnaSequence, windowSize, cutOff)	{
 		gcContent = gcContent * 100;
 		valueY = valueY.toFixed(2);
 		gcContent = gcContent.toFixed(2);
-		outputWindow.document.write ("CpG island detected in region 1 to " + windowSize + " (Obs/Exp = " + valueY + " and %GC = " + gcContent + ")<br />\n");
+		outputWindow.document.write ("CpG island detected in region 1 to " + windowSize + " (Obs/Exp = " + valueY + " and %GC = " + gcContent + ")<br>\n");
 		islandFound = true;
 	}
 
@@ -118,12 +118,12 @@ function cpgIslandRegions (dnaSequence, windowSize, cutOff)	{
 			gcContent = gcContent * 100;
 			valueY = valueY.toFixed(2);
 			gcContent = gcContent.toFixed(2);
-			outputWindow.document.write ("CpG island detected in region " + startRange + " to " + endRange + " (Obs/Exp = " + valueY + " and %GC = " + gcContent + ") <br />\n");
+			outputWindow.document.write ("CpG island detected in region " + startRange + " to " + endRange + " (Obs/Exp = " + valueY + " and %GC = " + gcContent + ") <br>\n");
 			islandFound = true;
 		}
 	}
 	if (!(islandFound))	{
-		outputWindow.document.write ("No CpG island regions were identified.<br />\n");
+		outputWindow.document.write ("No CpG island regions were identified.<br>\n");
 	}
 	return true;
 }

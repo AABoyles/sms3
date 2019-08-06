@@ -30,7 +30,7 @@ function dnaStats (theDocument) {
 
 		writeSequenceStats (newDna, itemsToCheck);
 
-		outputWindow.document.write ('<br />\n<br />\n');
+		outputWindow.document.write ('<br>\n<br>\n');
 	}
 
 	closeWindow();

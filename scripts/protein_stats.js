@@ -31,7 +31,7 @@ function proteinStats (theDocument) {
 
 		writeSequenceStats (newProtein, itemsToCheck);
 		
-		outputWindow.document.write ('<br />\n<br />\n');
+		outputWindow.document.write ('<br>\n<br>\n');
 	}
 
 	closeWindow();

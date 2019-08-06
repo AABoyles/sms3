@@ -64,11 +64,11 @@ function primerMap (theDocument) {
 
 	_openWindow("Primer Map", isColor);	
 	if (theDocument.forms[0].elements[8].options[theDocument.forms[0].elements[8].selectedIndex].value == "shown") {
-		outputWindow.document.write("<span class=\"one\">" + "cuts once" + "</span><br />\n");
-		outputWindow.document.write("<span class=\"two\">" + "cuts twice" + "</span><br />\n");
+		outputWindow.document.write("<span class=\"one\">" + "cuts once" + "</span><br>\n");
+		outputWindow.document.write("<span class=\"two\">" + "cuts twice" + "</span><br>\n");
 		outputWindow.document.write("\n");
-		outputWindow.document.write("<span class=\"forward_primer\">" + "&gt;&gt;&gt;forward primer" + "</span><br />\n");
-		outputWindow.document.write("<span class=\"reverse_primer\">" + "&lt;&lt;&lt;reverse primer" + "</span><br />\n");
+		outputWindow.document.write("<span class=\"forward_primer\">" + "&gt;&gt;&gt;forward primer" + "</span><br>\n");
+		outputWindow.document.write("<span class=\"reverse_primer\">" + "&lt;&lt;&lt;reverse primer" + "</span><br>\n");
 		outputWindow.document.write("\n");	
 	}			
 	var arrayOfFasta = getArrayOfFasta (theDocument.forms[0].elements[0].value);
@@ -125,12 +125,12 @@ function primerMap (theDocument) {
 		//this is a summary of the sites.
 		if (theDocument.forms[0].elements[8].options[theDocument.forms[0].elements[8].selectedIndex].value == "shown") {				
 			writeRestrictionSites (newDna, restrictionSites, theDocument.forms[0].elements[9].options[theDocument.forms[0].elements[9].selectedIndex].value);
-			outputWindow.document.write ('<br />\n');	
+			outputWindow.document.write ('<br>\n');	
 		}
 		//write summary of primers
 		writePrimerSites(newPrimers);		
 
-		outputWindow.document.write ('<br />\n<br />\n');
+		outputWindow.document.write ('<br>\n<br>\n');
 
 		//set primers hasMatch to false
 		for (var j = 0; j < newPrimers.length; j++) {
@@ -146,7 +146,7 @@ function primerMap (theDocument) {
 function writePrimerSites (primers) {
 	var backGroundClass;
 	outputWindow.document.write ('<table border="1" width="100%" cellspacing="0" cellpadding="2"><tbody>\n');	
-	outputWindow.document.write ('<tr><td class="title" width="200px">' + 'Primer:' + '</td><td class="title">' + 'Sequence:' + '</td></tr>\n');	
+	outputWindow.document.write ('<tr><td class="title" width="200px">' + 'Primer:' + '</td><span class="title">' + 'Sequence:' + '</span></tr>\n');	
 	for (var i = 0; i < (primers.length); i++)	{
 		if ((primers[i].hasForwardMatch) && (primers[i].hasReverseMatch)) {
 			backGroundClass = "many";	

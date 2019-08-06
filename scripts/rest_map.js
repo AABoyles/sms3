@@ -40,8 +40,8 @@ function restMap (theDocument) {
 	}
 
 	_openWindow("Restriction Map", isColor);	
-	outputWindow.document.write("<span class=\"one\">" + "cuts once" + "</span><br />\n");
-	outputWindow.document.write("<span class=\"two\">" + "cuts twice" + "</span><br />\n");
+	outputWindow.document.write("<span class=\"one\">" + "cuts once" + "</span><br>\n");
+	outputWindow.document.write("<span class=\"two\">" + "cuts twice" + "</span><br>\n");
 	outputWindow.document.write("\n");			
 	var arrayOfFasta = getArrayOfFasta (theDocument.forms[0].elements[0].value);
 
@@ -62,7 +62,7 @@ function restMap (theDocument) {
 		closePre();	
 				
 		writeRestrictionSites (newDna, restrictionSites, theDocument.forms[0].elements[7].options[theDocument.forms[0].elements[7].selectedIndex].value);
-		outputWindow.document.write ('<br />\n<br />\n');
+		outputWindow.document.write ('<br>\n<br>\n');
 	}
 
 

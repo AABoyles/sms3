@@ -19,8 +19,8 @@ function restSummary (theDocument) {
 
 	openWindow("Restriction Summary");
 	//openPre();		
-	outputWindow.document.write("<span class=\"one\">" + "cuts once" + "</span><br />\n");
-	outputWindow.document.write("<span class=\"two\">" + "cuts twice" + "</span><br />\n");
+	outputWindow.document.write("<span class=\"one\">" + "cuts once" + "</span><br>\n");
+	outputWindow.document.write("<span class=\"two\">" + "cuts twice" + "</span><br>\n");
 	outputWindow.document.write("\n");
 	var arrayOfFasta = getArrayOfFasta (theDocument.forms[0].elements[0].value);
 
@@ -34,7 +34,7 @@ function restSummary (theDocument) {
 
 		writeRestrictionSites (newDna, itemsToCheck, theDocument.forms[0].elements[4].options[theDocument.forms[0].elements[4].selectedIndex].value);
 		
-		outputWindow.document.write ('<br />\n<br />\n');
+		outputWindow.document.write ('<br>\n<br>\n');
 	}
 
 	//closePre();

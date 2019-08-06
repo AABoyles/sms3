@@ -412,7 +412,7 @@ function openPre () {
 }
 
 function openTextArea ()	{
-	outputWindow.document.write ('<br /><textarea rows="6" cols="61">\n');
+	outputWindow.document.write ('<br><textarea rows="6" cols="61">\n');
 	return true;
 }
 
@@ -428,7 +428,7 @@ function _openWindow (title, isColor) {
 			             "<html lang=\"en\">\n" +
 				     "<head>\n" +
                                      "<title>Sequence Manipulation Suite</title>\n" +                         
-                                     "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\" />\n");
+                                     "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n");
 
 	if (isColor) {
         outputWindow.document.write ("<style type=\"text/css\">\n" +
@@ -486,7 +486,7 @@ function _openWindowAlign (title, isBackground) {
 			             "<html lang=\"en\">\n" +
 				     "<head>\n" +
                                      "<title>Sequence Manipulation Suite</title>\n" +                         
-                                     "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\" />\n");
+                                     "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n");
 	if (isBackground) {
         outputWindow.document.write ("<style type=\"text/css\">\n" +
 				     "body.main {font-family: arial, sans-serif; font-size:90%; color: #000000; background-color: #FFFFFF}\n" +
@@ -947,7 +947,7 @@ function writeRestrictionSites (sequence, arrayOfItems, dnaConformation)	{
 		upperLimit = upperLimit + shiftValue;
 	}
 	outputWindow.document.write ('<table border="1" width="100%" cellspacing="0" cellpadding="2"><tbody>\n');	
-	outputWindow.document.write ('<tr><td class="title" width="200px">' + 'Site:' + '</td><td class="title">' + 'Positions:' + '</td></tr>\n');	
+	outputWindow.document.write ('<tr><td class="title" width="200px">' + 'Site:' + '</td><span class="title">' + 'Positions:' + '</span></tr>\n');	
 	for (var i = 0; i < (arrayOfItems.length); i++)	{
 		tempString = "none";
 		backGroundClass = "many";
@@ -997,7 +997,7 @@ function writeRestrictionSites (sequence, arrayOfItems, dnaConformation)	{
 function writeSequenceStats (sequence, arrayOfItems)	{	//arrayOFItems are regular expressions. A number included with each regular expression serves as an adjustment for the percentage calculation. Any additional text will appear next to the pattern when the results are given.
 	var originalLength = sequence.length;
 	outputWindow.document.write ('<table border="1" width="100%" cellspacing="0" cellpadding="2"><tbody>\n');	
-	outputWindow.document.write ('<tr><td class="title">' + 'Pattern:' + '</td><td class="title">' + 'Times found:' + '</td><td class="title">' + 'Percentage:' + '</td></tr>\n');	
+	outputWindow.document.write ('<tr><span class="title">' + 'Pattern:' + '</span><span class="title">' + 'Times found:' + '</span><span class="title">' + 'Percentage:' + '</span></tr>\n');	
 	for (var i = 0; i < (arrayOfItems.length); i++)	{
 		var tempNumber = 0;
 		var matchExp = arrayOfItems[i].match(/\/[^\/]+\//) + "gi";

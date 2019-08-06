@@ -29,7 +29,7 @@ function proteinGravy (theDocument) {
 
 		outputWindow.document.write(getProteinGravy(newProtein));
 		
-		outputWindow.document.write ('<br />\n<br />\n');
+		outputWindow.document.write ('<br>\n<br>\n');
 	}
 
 	closeWindow();
