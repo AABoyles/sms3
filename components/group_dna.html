@@ -1,0 +1,254 @@
+
+
+
+  <script type="text/javascript" src="scripts/sms_common.js">
+</script>
+  <script type="text/javascript" src="scripts/group_dna.js">
+</script>
+</head>
+
+<body onload="document.main_form.main_submit.focus()">
+  <!-- MAIN TABLE -->
+
+  <table border="0" cellspacing="2" cellpadding="2">
+    <tbody>
+      <tr>
+        <td class="links">
+          <a href="index.html"><img src="logo.png" alt="SMS logo" width="144" height="56" border="0"></a> <!-- INSERT LINKS -->
+  <div class="category">
+    Format Conversion
+  </div>
+
+  <div class="program">
+    <a href="combine_fasta.html" title="Combines multiple FASTA entries into a single sequence.">-Combine FASTA</a>
+    <a href="embl_fasta.html" title="Returns the entire sequence contained in an EMBL file in FASTA format.">-EMBL to FASTA</a>
+    <a href="embl_feat.html" title="Parses the feature table of an EMBL file and returns the feature sequences.">-EMBL Feature Extractor</a>
+    <a href="embl_trans.html" title="Parses the feature table of an EMBL file and returns the protein translations.">-EMBL Trans Extractor</a>
+    <a href="filter_dna.html" title="Removes non-DNA characters from text.">-Filter DNA</a>
+    <a href="filter_protein.html" title="Removes non-protein characters from text.">-Filter Protein</a>
+    <a href="genbank_fasta.html" title="Returns the entire sequence contained in a GenBank file in FASTA format.">-GenBank to FASTA</a>
+    <a href="genbank_feat.html" title="Parses the feature table of a GenBank file and returns the feature sequences.">-GenBank Feature Extractor</a>
+    <a href="genbank_trans.html" title="Parses the feature table of a GenBank file and returns the protein translations.">-GenBank Trans Extractor</a>
+    <a href="one_to_three.html" title="Converts single letter amino acid codes to three letter codes.">-One to Three</a>
+    <a href="range_extract_dna.html" title="Reads a list of positions and ranges and returns those parts of a DNA sequence.">-Range Extractor DNA</a>
+    <a href="range_extract_protein.html" title="Reads a list of positions and ranges and returns those parts of a protein sequence.">-Range Extractor Protein</a>
+    <a href="rev_comp.html" title="Determines the reverse-complement, reverse, or complement of the sequence you enter.">-Reverse Complement</a>
+    <a href="split_codons.html" title="Separates bases according to codon position.">-Split Codons</a>
+    <a href="split_fasta.html" title="Converts a FASTA sequence into multiple sequences.">-Split FASTA</a>
+    <a href="three_to_one.html" title="Converts three letter amino acid codes to one letter codes.">-Three to One</a>
+    <a href="window_extract_dna.html" title="Returns DNA sequence segments specified by a position and window size.">-Window Extractor DNA</a>
+    <a href="window_extract_protein.html" title="Returns protein sequence segments specified by a position and window size.">-Window Extractor Protein</a>
+  </div>
+
+  <div class="category">
+    Sequence Analysis
+  </div>
+
+  <div class="program">
+    <a href="codon_plot.html" title="Plots codon frequency (according to the codon table you enter) for each codon in a DNA sequence.">-Codon Plot</a>
+    <a href="codon_usage.html" title="Returns a standard codon usage table.">-Codon Usage</a>
+    <a href="cpg_islands.html" title="Returns a list of potential CpG islands.">-CpG Islands</a>
+    <a href="dna_mw.html" title="Calculates the molecular weight of DNA sequences.">-DNA Molecular Weight</a>
+    <a href="dna_pattern.html" title="Returns positions of the patterns you enter.">-DNA Pattern Find</a>
+    <a href="dna_stats.html" title="Returns basic sequence statistics.">-DNA Stats</a>
+    <a href="fuzzy_search_dna.html" title="Returns sequences that are identical or similar to a query sequence.">-Fuzzy Search DNA</a>
+    <a href="fuzzy_search_protein.html" title="Returns sequences that are identical or similar to a query sequence.">-Fuzzy Search Protein</a>
+    <a href="ident_sim.html" title="Accepts aligned sequences in FASTA format and calculates the identity and similarity of each sequence pair.">-Ident and Sim</a>
+    <a href="multi_rev_trans.html" title="Can be used to predict a DNA sequence in another species using a protein sequence alignment.">-Multi Rev Trans</a>
+    <a href="mutate_for_digest.html" title="Finds DNA sequences that can easily be converted to a restriction site.">-Mutate for Digest</a>
+    <a href="orf_find.html" title="Determines the positions of open reading frames.">-ORF Finder</a>
+    <a href="pairwise_align_codons.html" title="Returns the optimal global alignment for two coding DNA sequences.">-Pairwise Align Codons</a>
+    <a href="pairwise_align_dna.html" title="Returns the optimal global alignment for two DNA sequences.">-Pairwise Align DNA</a>
+    <a href="pairwise_align_protein.html" title="Returns the optimal global alignment for two protein sequences.">-Pairwise Align Protein</a>
+    <a href="pcr_primer_stats.html" title="Returns a report describing PCR primer properties">-PCR Primer Stats</a>
+    <a href="pcr_products.html" title="Generates PCR products from a template and two primer sequences.">-PCR Products</a>
+    <a href="protein_gravy.html" title="Returns the grand average of hydropathy value of protein sequences.">-Protein GRAVY</a>
+    <a href="protein_iep.html" title="Returns the predicted isoelectric point of protein sequences.">-Protein Isoelectric Point</a>
+    <a href="protein_mw.html" title="Calculates the molecular weight of protein sequences.">-Protein Molecular Weight</a>
+    <a href="protein_pattern.html" title="Returns positions of the patterns you enter.">-Protein Pattern Find</a>
+    <a href="protein_stats.html" title="Returns basic sequence statistics.">-Protein Stats</a>
+    <a href="rest_digest.html" title="Converts the sequence you enter into restriction fragments.">-Restriction Digest</a>
+    <a href="rest_summary.html" title="Returns the number and positions of restriction sites.">-Restriction Summary</a>
+    <a href="rev_trans.html" title="Can be used to convert protein into DNA.">-Reverse Translate</a>
+    <a href="translate.html" title="Returns the translation in the reading frame you specify.">-Translate</a>
+  </div>
+
+  <div class="category">
+    Sequence Figures
+  </div>
+
+  <div class="program">
+    <a href="color_align_cons.html" title="Colors a sequence alignment based on sequence conservation.">-Color Align Conservation</a>
+    <a href="color_align_prop.html" title="Colors a protein alignment based on biochemical properties of residues.">-Color Align Properties</a>
+    <a href="group_dna.html" title="Numbers and groups DNA according to your specifications.">-Group DNA</a>
+    <a href="group_protein.html" title="Numbers and groups amino acids according to your specifications.">-Group Protein</a>
+    <a href="primer_map.html" title="Shows PCR primer annealing sites, translations, and restriction sites.">-Primer Map</a>
+    <a href="rest_map.html" title="Shows restriction sites and protein translations.">-Restriction Map</a>
+    <a href="trans_map.html" title="Shows protein translations.">-Translation Map</a>
+  </div>
+
+  <div class="category">
+    Random Sequences
+  </div>
+
+  <div class="program">
+    <a href="mutate_dna.html" title="Introduces random mutations into DNA sequences.">-Mutate DNA</a>
+    <a href="mutate_protein.html" title="Introduces random mutations into protein sequences.">-Mutate Protein</a>
+    <a href="random_coding_dna.html" title="Generates a random coding sequence of the length you specify.">-Random Coding DNA</a>
+    <a href="random_dna.html" title="Generates a random DNA sequence of the length you specify.">-Random DNA Sequence</a>
+    <a href="random_dna_regions.html" title="Replaces regions of the DNA sequences you enter with random bases.">-Random DNA Regions</a>
+    <a href="random_protein.html" title="Generates a random protein sequence of the length you specify.">-Random Protein Sequence</a>
+    <a href="random_protein_regions.html" title="Replaces regions of the protein sequences you enter with random residues.">-Random Protein Regions</a>
+    <a href="sample_dna.html" title="Samples bases from a DNA sequence with replacement.">-Sample DNA</a>
+    <a href="sample_protein.html" title="Samples residues from a protein sequence with replacement.">-Sample Protein</a>
+    <a href="shuffle_dna.html" title="Randomly shuffles the DNA sequences you enter.">-Shuffle DNA</a>
+    <a href="shuffle_protein.html" title="Randomly shuffles the protein sequences you enter.">-Shuffle Protein</a>
+  </div>
+
+  <div class="category">
+    Miscellaneous
+  </div>
+
+  <div class="program">
+    <a href="iupac.html" title="IUPAC codes for DNA and protein.">-IUPAC codes</a>
+    <a href="genetic_code.html" title="The genetic codes used in the Sequence Manipulation Suite.">-Genetic codes</a>
+    <a href="browser_compat.html" title="Browser compatibility.">-Browser compatibility</a>
+    <a href="mirror.html" title="Mirror the Sequence Manipulation Suite.">-Mirror this site</a>
+    <a href="mirror.html" title="Use the Sequence Manipulation Suite off-line.">-Use this site off-line</a>
+    <a href="about.html" title="About the Sequence Manipulation Suite.">-About this site</a>
+    <a href="acknowledgments.html" title="Acknowledgments.">-Acknowledgments</a>
+    <a href="reference.html" title="Citing the Sequence Manipulation Suite.">-Reference</a>
+  </div>
+<!-- END INSERT LINKS -->
+
+          <div class="copyright">
+            
+            The Sequence Manipulation Suite Copyright &copy; 2000, 2004 Paul Stothard. Send questions and comments to stothard@ualberta.ca
+          </div>
+
+          <center>
+            <div class="program">
+              <a href="index.html" target="_top">home</a>
+            </div>
+          </center>
+        </td><!-- PROGRAM CONTENT -->
+
+        <td class="program">
+          <table border="0" cellspacing="0" cellpadding="2">
+            <tbody>
+              <tr>
+                
+              </tr>
+
+              <tr>
+                <span class="title">Group DNA</span>
+              </tr>
+
+              <tr>
+                <p class="description">
+                  Group DNA adjusts the spacing of DNA sequences and adds numbering. You can specify the group size (the number of bases per group), as well as the number of bases per line. The output of this program can serve as a convenient reference, since the numbering and spacing allows you to quickly locate specific bases.
+                  
+
+                  <form action="" name="main_form" id="main_form">
+                    Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 100,000,000 characters.
+                    <textarea rows="6" cols="61">
+&gt;CDS /gene="fem-2" (exons highlighted in uppercase by GenBank Feature Extractor)
+gaacgcgaatgcctctctctctttcgatgggtatgccaattgtccacattcactcgtgttgcctcctctttgccaacacgcaagacaccagaaacgcgtcaaccaaagagaaaaagacgccgacaacgggcagcactcgcgagagacaaaggttatcgcgttgtgttattatacattcgcatccgggtcaactttagtccgttgaacatgcttcttgaaaacctagttctcttaaaataacgttttagaagttttggtcttcagATGTCTGATTCGCTAAATCATCCATCGAGTTCTACGGTGCATGCAGATGATGGATTCGAGCCACCAACATCTCCGGAAGACAACAACAAAAAACCGTCTTTAGAACAAATTAAACAGGAAAGAGAAGCGTTGTTTACGgttagttacctattagctgcaagttttgaaaaagcggaatctgtaaaaagcggaatctgtaaaaaaaacatctaaggaataattctgaaaagaaaaagtttctaaatgttaatcggaatccaatttttatgaaattatttaaaaaaaaactaaaattagtttctaaaaaatttttctaaagtaattggaccatgtgaaggtacacccacttgttccaatatgccatatctaactgtaaaataatttgattctcatgagaatatttttcagGATCTATTCGCAGATCGTCGACGAAGCGCTCGTTCTGTGATTGAAGAAGCTTTCCAAAACGAACTCATGAGTGCTGAACCAGTCCAGCCAAACGTGCCGAATCCACATTgtgagttggaaatttttatttgataaccaagagaaaaaaagttctacctttttttcaaaaacctttccaaaaatgattccatctgatataggattaagaaaaatattttccgaaatctctgcttttcagCGATTCCCATTCGTTTCCGTCATCAACCAGTTGCTGGACCTGCTCATGATGTTTTCGGAGACGCGGTGCATTCAATTTTTCAAAAAATAATGTCCAGgtatacactatttttgcatatttttcttgccaaatttggtcaaaaaccgtagtacaacccaaaaagtttcttcatttcagAGGAGTGAACGCGGATTATAGTCATTGGATGTCATATTGGATCGCGTTGGGAATCGACAAAAAAACACAAATGAACTATCATATGAAACCGTTTTGCAAAGATACTTATGCAACTGAAGGCTCCTTAGgtaggttagtcttttctaggcacagaagagtgagaaaattctaaatttctgagcagtctgctttttgttttccttgagtttttacttaaagctcttaaaagaaatctaggcgtgaagttcgagccttgtaccataccacaacagcattccaaatgttacagAAGCGAAACAAACATTTACTGATAAAATCAGGTCAGCTGTTGAGGAAATTATCTGGAAGTCCGCTGAATATTGTGATATTCTTAGCGAGAAGTGGACAGGAATTCATGTGTCGGCCGACCAACTGAAAGGTCAAAGAAATAAGCAAGAAGATCGTTTTGTGGCTTATCCAAATGGACAATACATGAATCGTGGACAGgttagtgcgaatcggggactcaagatttactgaaatagtgaagagaaaacaaaagaaaactatattttcaaaaaaaatgagaactctaataaacagaatgaaaaacattcaaagctacagtagtatttccagctggagtttccagagccaaaaaaatgcgagtattactgtagttttgaaattggtttctcactttacgtacgattttttgatttttttttcagactcttcatatgaaaaaaaatcatgttttctcctttacaagatttttttgatctcaaaacatttccagAGTGACATTTCACTTCTTGCGGTGTTCGATGGGCATGGCGGACACGAGTGCTCTCAATATGCAGCTGCTCATTTCTGGGAAGCATGGTCCGATGCTCAACATCATCATTCACAAGATATGAAACTTGACGAACTCCTAGAAAAGGCTCTAGAAACATTGGACGAAAGAATGACAGTCAGAAGTGTTCGAGAATCTTGGAAAGGTGGAACCACTGCTGTCTGCTGTGCTGTTGATTTGAACACTAATCAAATCGCATTTGCCTGGCTTGGAGATTCACCAGGgtaatcaatttttttttagtttttggaactttacgtcccgaaaaattattcctttatcacctaattcctacagtaacccaagctccgaattaaataaagttaaagcgtggtatacacataaaaataagaaaaaattgttcatgaaatccatttttccagTTACATCATGTCAAACTTGGAGTTCCGCAAATTCACTACTGAACACTCCCCGTCTGACCCGGAGGAATGTCGACGAGTCGAAGAAGTCGGTGGCCAGATTTTTGTGATCGGTGGTGAGCTCCGTGTGAATGGAGTACTCAACCTGACGCGAGCACTAGGAGACGTACCTGGAAGACCAATGATATCCAACAAACCTGATACCTTACTGAAGACGATCGAACCTGCGGATTATCTTGTTTTGTTGGCCTGTGACGGGATTTCTGACGTCTTCAACACTAGTGATTTGTACAATTTGGTTCAGGCTTTTGTCAATGAATATGACGTAGAAGgtatcaaactgatcgtttttcacatcacaaaattcttgaattttccagATTATCACGAACTTGCACGCTACATTTGCAATCAAGCAGTTTCAGCTGGAAGTGCTGACAATGTGACAGTAGTTATAGGTTTCCTCCGTCCACCAGAAGACGTTTGGCGTGTAATGAAAACAGACTCGGATGATGAAGAGAGCGAGCTCGAGGAAGAAGATGACAATGAATAGtttattgcaagttttccaaaacttttccaatttccctgggtattgattagcatccatatcttacggcgattatatcaattgtaacattatttctgtttctccccccacctctcaaattttcaaatgaccctttttcttttcgtctacctgtatcgttttccattcatctccccccctccactgtggtatatcattttgtcattagaaagtattattttgattttcattggcagtagaagacaacaggatacagaagaggttttcacag
+</textarea>
+
+                    <input type="button" value="Submit" name="main_submit" onclick="try{groupDna(document)} catch(e) {alert('The following error was encountered: ' + e);}"> <input type="button" value="Clear" onclick="document.forms[0].elements[0].value = ' '"> <input type="reset" value="Reset">
+
+                    <ul>
+                      <li>Use a group size of <select>
+                        <option value="10" selected="selected">
+                          10
+                        </option>
+
+                        <option value="5">
+                          5
+                        </option>
+
+                        <option value="3">
+                          3
+                        </option>
+                      </select> and display <select>
+                        <option value="100">
+                          100
+                        </option>
+
+                        <option value="90">
+                          90
+                        </option>
+
+                        <option value="80" selected="selected">
+                          80
+                        </option>
+
+                        <option value="70">
+                          70
+                        </option>
+
+                        <option value="60">
+                          60
+                        </option>
+
+                        <option value="50">
+                          50
+                        </option>
+
+                        <option value="40">
+                          40
+                        </option>
+
+                        <option value="30">
+                          30
+                        </option>
+                      </select> bases per line.</li>
+
+                      <li><select>
+                        <option value="one" selected="selected">
+                          Don't show
+                        </option>
+
+                        <option value="two">
+                          Show
+                        </option>
+                      </select> the reverse strand.</li>
+
+                      <li>Show numbering <select>
+                        <option value="left" selected="selected">
+                          to the left of
+                        </option>
+
+                        <option value="above">
+                          above
+                        </option>
+
+                        <option value="right">
+                          to the right of
+                        </option>
+                      </select> the sequence.</li>
+
+                      <li>Start the numbering at <input type="text" value="1"></li>
+                    </ul>
+                  </form>*This page requires JavaScript. See <a href="browser_compat.html">browser compatibility.</a>
+                  *You can <a href="mirror.html">mirror this page</a> or <a href="mirror.html">use it off-line</a>.
+                  
+
+                  <center>
+                    <a href="group_dna.html" target="_blank">new window</a> | <a href="index.html">home</a> | <a href="reference.html">citation</a>
+                  </center><span class="version">Mon Nov  6 02:56:29 2017</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span class="valid">Valid XHTML 1.0; Valid CSS</span></td>
+              </tr>
+            </tbody>
+          </table><!-- MAIN TABLE END -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
