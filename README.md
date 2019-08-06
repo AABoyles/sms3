@@ -1,6 +1,6 @@
-# Sequence Manipulation Suite 3
+# The Sequence Manipulation Suite 3
 
-Copyright (C) 2000, 2004 Paul Stothard
+Based on the [Sequence Manipulation Suite](http://www.bioinformatics.org/sms2/) by [Paul Stothard](mailto:stothard@ualberta.ca)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
